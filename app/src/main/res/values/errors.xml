@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  -->
+
+<resources>
+    <string name="error_cloud_translation_unavailable">Cloud translation service is unavailable.</string>
+    <string name="error_local_translation_unavailable">Local translation service is unavailable.</string>
+    <string name="error_aft_language_not_supported">Selected language is not supported.</string>
+    <string name="error_translation_unavailable">Translation service is unavailable.</string>
+    <string name="error_service_has_no_response">Service has no response.</string>
+    <string name="error_no_files_found">No files found</string>
+    <string name="error_no_files_found_image">no files found image</string>
+    <string name="error_no_result_found">No result found.</string>
+    <string name="error_service_unavailable">Service unavailable.</string>
+    <string name="error_file_cannot_process">Selected file could not be processed</string>
+    <string name="error_internet_connection">Network is not awailable</string>
+    <string name="error_language_not_supported">This Language is Not Supported</string>
+    <string name="error_aft_is_not_supported">%1$s is not supported for audio files.</string>
+    <string name="error_language_not_supported_rtt">This language is not supported in your region.</string>
+    <string name="error_crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="error_install_file_manager">Please install a file manager app.</string>
+    <string name="error_audio_trans_permission">Please allow this app to use your microphone and access external storage.</string>
+    <string name="error_rtt_not_available_for_device">Real time engine currently cannot support %1$s language on %2$s devices.</string>
+</resources>

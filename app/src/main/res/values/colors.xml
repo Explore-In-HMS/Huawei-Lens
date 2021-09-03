@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  -->
+
+<resources>
+    <color name="black">#000000</color>
+    <color name="common_line_color">#D9D9D9</color>
+    <color name="primary_text_color">#A9A9A9</color>
+    <color name="secondary_text_color">#626262</color>
+    <color name="text_color">#1d1d1d</color>
+    <color name="logo_background">#003853</color>
+    <color name="primary_background">#f2f2f2</color>
+    <color name="button_background">#5CACEE</color>
+    <color name="white">#ffffff</color>
+    <color name="head_blue">#ff005fce</color>
+
+    <color name="color_red_card">#FFFA2A2D</color>
+    <color name="color_red_cancel">#EE6A50</color>
+
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#4E4E4E</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="text_dark">#878787</color>
+    <color name="text_black">#333333</color>
+    <color name="bfbfbf">#bfbfbf</color>
+    <color name="colorfirst">#b0003a</color>
+    <color name="colorsecond">#28D6C0</color>
+    <color name="colorthird">#F9E22C</color>
+    <color name="colorfourth">#8A8989</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorWhite">#FFFF</color>
+    <color name="colorBackground">#F3F3F3</color>
+    <color name="colorStroke">#BDBDBD</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorGray">#616161</color>
+
+    <color name="grey">#555555</color>
+    <color name="midGrey">#88FFFFFF</color>
+    <color name="selectedGrey">#44FFFFFF</color>
+    <color name="midBlack">#33000000</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+</resources>

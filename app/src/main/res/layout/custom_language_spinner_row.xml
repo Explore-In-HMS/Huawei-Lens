@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    android:id="@+id/flexBox"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/spinner_dropdown_item_background"
+    app:justifyContent="space_between"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- or "space_between", "space_evenly" -->
+        <CheckedTextView
+            android:id="@+id/languageName"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="6dp"
+            android:textColor="#88FFFFFF"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/isDownloaded"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="6dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@id/languageName"
+            android:src="@drawable/ic_download_white_24dp"
+            android:contentDescription="TODO"
+            android:layout_toRightOf="@id/languageName" />
+    </com.google.android.flexbox.FlexboxLayout>

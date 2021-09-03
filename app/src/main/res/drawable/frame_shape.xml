@@ -1,0 +1,87 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="200dp"
+        android:height="200dp">
+
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="4dp"
+                android:color="#00000000" />
+
+            <solid android:color="@color/transparent" />
+        </shape>
+    </item>
+    <item
+        android:width="4dp"
+        android:bottom="0dp"
+        android:top="140dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+    <item
+        android:width="4dp"
+        android:bottom="140dp"
+        android:top="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+    <item
+        android:width="4dp"
+        android:bottom="0dp"
+        android:gravity="right"
+        android:top="140dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+    <item
+        android:width="4dp"
+        android:bottom="140dp"
+        android:gravity="right"
+        android:top="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+    <item
+        android:height="4dp"
+        android:gravity="top"
+        android:left="0dp"
+        android:right="140dp"
+        android:top="-1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+    <item
+        android:height="4dp"
+        android:gravity="top"
+        android:left="140dp"
+        android:right="0dp"
+        android:top="-1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+    <item
+        android:height="4dp"
+        android:gravity="bottom"
+        android:left="0dp"
+        android:right="140dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+    <item
+        android:height="4dp"
+        android:gravity="bottom"
+        android:left="140dp"
+        android:right="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+</layer-list>

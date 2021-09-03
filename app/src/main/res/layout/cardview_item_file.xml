@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  -->
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_id"
+    android:layout_width="match_parent"
+    style="@style/CardView.Light"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="3dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    cardview:cardCornerRadius="4dp"
+    cardview:cardPreventCornerOverlap="true"
+    cardview:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/card_view_layout"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/book_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#F5F6F6"
+            android:scaleType="centerCrop"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent" />
+        <CheckBox
+            android:layout_width="30dp"
+            android:id="@+id/file_checkbox"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:visibility="gone"
+            android:buttonTint="#00A4FF"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent">
+
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/book_title_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:includeFontPadding="false"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintEnd_toStartOf="@id/threedot"
+            cardview:layout_constraintHorizontal_bias="0"
+            cardview:layout_constraintTop_toBottomOf="@id/book_img_id" />
+
+        <ImageView
+            android:id="@+id/threedot"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_3dots"
+            cardview:tint="@color/black"
+            cardview:layout_constraintHorizontal_bias="1"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@id/book_img_id" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

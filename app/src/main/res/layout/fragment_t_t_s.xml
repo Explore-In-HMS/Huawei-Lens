@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_dp16"
+        android:layout_marginBottom="@dimen/margin_dp24"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/abc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp32"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/menu_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transcription_type_radiogroup"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/settings_button"
+                    android:layout_width="@dimen/radio_button_width"
+                    android:layout_height="@dimen/radio_button_height"
+                    android:background="@drawable/transcription_type_radio_button"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/radio_button_horizontal_padding"
+                    android:paddingVertical="@dimen/radio_button_vertical_padding"
+                    android:text="@string/settings"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/pick_file_button"
+                    android:layout_width="@dimen/radio_button_width"
+                    android:layout_height="@dimen/radio_button_height"
+                    android:background="@drawable/transcription_type_radio_button"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/radio_button_horizontal_padding"
+                    android:paddingVertical="@dimen/radio_button_vertical_padding"
+                    android:text="@string/choose_file"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/settings_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_dp12"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/radio_button_height"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="2dp">
+
+                    <TextView
+                        android:id="@+id/volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tts_volume"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:textColor="@color/midGrey"/>
+
+                    <SeekBar
+                        android:id="@+id/seek_bar_volume"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:splitTrack="false"
+                        android:progressDrawable="@drawable/seek_bar_style"
+                        android:thumb="@drawable/custom_thumb"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/radio_button_height"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="2dp">
+
+                    <TextView
+                        android:id="@+id/speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tts_speed"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:textColor="@color/midGrey"/>
+
+                    <SeekBar
+                        android:id="@+id/seek_bar_speed"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:splitTrack="false"
+                        android:progressDrawable="@drawable/seek_bar_style"
+                        android:thumb="@drawable/custom_thumb"
+                        android:layout_marginStart="8dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/picker_button_layout"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_dp12"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_choose_file"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/white_button_circle"
+                    android:drawableTop="@drawable/ic_icon"
+                    android:paddingTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_file"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="@dimen/text_size_11sp"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tts_scroll_view_height"
+            android:layout_marginVertical="@dimen/margin_dp10"
+            android:background="@drawable/transcription_result_container">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="@dimen/margin_dp10">
+                <EditText
+                    android:id="@+id/tts_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tts_edit_text_height"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeMinTextSize="@dimen/text_size_12sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="none"
+                    android:drawableStart="@drawable/ic_text"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="@color/midGrey"
+                    android:hint="@string/enter_your_text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/midGrey"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    tools:ignore="Autofill,TextFields,UnusedAttribute" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center|top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                tools:ignore="RtlHardcoded">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/info"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondisable"
+                    android:text="@string/about"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/white" />
+
+                <Space
+                    android:layout_width="@dimen/tts_between_buttons"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clean"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondisable"
+                    android:text="@string/clear_text"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_male"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonmale"
+                        android:text="@string/tts_male"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/buttonPlay"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_camera_button"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_play_arrow_white_48dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:tint="#88000000"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_female"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonfemale"
+                        android:text="@string/tts_female"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
